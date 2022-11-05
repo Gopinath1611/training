@@ -16,7 +16,9 @@ public interface GstRepository extends JpaRepository <Gst,Integer>{
 	}*/
 
 
-
+@Query(value="SELECT hsn_Code FROM product.gst where percentage=:h",nativeQuery=true )
+	
+	public int getHsncodeByPercentage(@Param("h")int h);
 
 
 }

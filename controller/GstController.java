@@ -28,10 +28,16 @@ public class GstController {
 		return gstser.multidetail(g);
 }
 
-@GetMapping(value="Percen/{h}")
+/*@GetMapping(value="Percen/{h}")
 
 public int getByHsncode(@PathVariable int h) {
 	return gstser.getByhsncode(h);
+}*/
+
+@GetMapping(value="hsncode/{h}")
+
+public int getByPercentage(@PathVariable int h) {
+	return gstser.getBypercentage(h);
 }
 }
 

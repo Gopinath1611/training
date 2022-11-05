@@ -21,8 +21,13 @@ public class GstDao {
 		return "Successfully GST Added";
 
 }
-	public int getByhsncode(int h) {
+	/*public int getByhsncode(int h) {
 		
 		return gstrepo.getPercentageByHsncode(h);
+	}
+	*/
+	public int getBypercentage(int h) {
+		// TODO Auto-generated method stub
+		return gstrepo.getHsncodeByPercentage(h);
 	}
 }

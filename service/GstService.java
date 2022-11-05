@@ -21,9 +21,13 @@ public class GstService {
 	
 	
 }
-	public int getByhsncode(int h) {
+	/*public int getByhsncode(int h) {
 		// TODO Auto-generated method stub
 		return gstDao.getByhsncode(h);
+	}*/
+	public int getBypercentage(int h) {
+		
+		return gstDao.getBypercentage(h);
 	}
 	
 	}
